@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <img src="assets/img/logo.png" alt="Logo ToDo List">
+    </header>
+    <main>
+        <!-- formulário de cadastro -->
+        <section class="form">
+            <form id="formCadastroTarefa">
+                <input type="text" 
+                        name="tarefa"
+                        required minlength="2" 
+                        placeholder="Adicione uma nova tarefa"/>
+                
+                <button type="submit">
+                    Criar 
+                    <img src="assets/img/adicionar.png" alt="Icon Criar task">
+                </button>
+            </form>
+        </section>
+        <!-- Seção dos contadores -->
+        <section class="tarefa">
+            <div>
+                <p>Tarefas criadas</p>
+                <span id="numTarefas">12</span>
+            </div>
+
+            <div>
+                <p>Concluídas</p>
+                <span id="numConcluidas">10</span>
+            </div>
+
+            <div>
+                <input type="text" id="inputBusca" placeholder="Busque por Tarefas">
+            </div>
+        </section>
+ 
+        <!-- Lista vazia -->
+         <section id="semTarefa">
+            <img src="assets/img/icone-sem-tarefa.png" alt="Icon sem Tarefa">
+            <h3>Você ainda não tem tarefas cadastradas</h3>
+            <p>Crie tarefas e organize seus itens a fazer</p>
+         </section>
+
+         <!-- Lista com Tarefas -->
+          <section id="listaTarefas">
+            <div>
+                <button title="Concluir Tarefa"></button>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <button title="Excluir Tarefa"></button>
+                <img src="assets/img/lixeira.png" alt="Icon Lixeira">
+            </div>
+          </section>
+    </main>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
