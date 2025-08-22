@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root{
+    --purple-light: #DDD2EF;
+    --purple-base: #9359F3;
+    --purple-dark: #6F3CC3;
+
+    --green-light: #BFE3D0;
+    --green-base: #479C6E;
+    --green-dark: #2D6C4A;
+
+    --gray-100: #F0EDF2;
+    --gray-200: #E5E2E9;
+    --gray-330: #E0DCE4;
+    --gray-400: #D1CBD7;
+    --gray-500: #6B6572;
+    --gray-600: #262428;
+
+    --danger: #C2464D;
+
+    --font-input: 16px/140% 'inter', sans-serif;
+    --font-weight-input: 400;
+    --text-decoration-input: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: var(--gray-100);
+}
+header{
+    background-color: var(--gray-330);
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+main{
+    max-width: 736px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.form {
+    margin-top: -30px;
+}
+
+#formCadastroTarefa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+#formCadastroTarefa input{
+    font-size: 16px;
+    font-weight: regular;
+    width: 618px;
+    height: 52px;
+    border: 2px solid var(--gray-400);
+    border-radius: 8px;
+    padding-left: 20px;
+}
+#formCadastroTarefa input:focus{
+    outline: none;
+    border-color: var(--purple-dark);
+}
+#formCadastroTarefa button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--purple-dark);
+    width: 110px;
+    height: 56px;
+    border-radius: 8px;
+    border: 1px solid var(--purple-dark);
+    color: white;
+    font-weight: bold;
+    line-height: 140%;
+}
+
+#formCadastroTarefa button img{
+    height: 20px;
+    width: 20px;
+}
+
+#formCadastroTarefa button:hover{
+    background-color: #9359F3;
+}
+
+.tarefa {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tarefa div{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    color: var(--gray-500);
+    font-size: 14px;
+}
+
+#numTarefas {
+    background-color: var(--purple-light);
+    color: var(--purple-dark);
+    font-size: 12px;
+    font-weight: 900;
+    border-radius: 20px;
+    padding: 2px 8px;
+}
+
+#numConcluidas {
+    background-color: var(--green-light);
+    color: var(--green-dark);
+    font-size: 12px;
+    font-weight: 900;
+    border-radius: 20px;
+    padding: 2px 8px;
+}
+
+#inputBusca{
+    width: 135px;
+    border: 2px solid var(--gray-400);
+    border-radius: 5px;
+    padding-left: 20px;
+    height: 20px;
+}
+#inputBusca:focus{
+    outline: none;
+    border-color: var(--purple-dark);
+}
+
+hr{
+    margin-top: 20px;
+    opacity: 0.2;
+}
+
+#semTarefa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    color: var(--gray-500);
+    font-size: 14px;
+    gap: 15px;
+}
+#semTarefa div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
