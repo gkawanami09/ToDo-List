@@ -162,3 +162,78 @@ hr{
     justify-content: center;
 }
 
+@media (min-width: 2560px) {
+  main {
+    max-width: 1800px;   /* ocupa mais espaço horizontal */
+    width: 95%;
+  }
+
+  header {
+    height: 300px;       /* header mais alto */
+  }
+  header img {
+    height: 150px;
+  }
+
+  #formCadastroTarefa {
+    margin-top: -50px;
+    gap: 12px;
+  }
+
+  #formCadastroTarefa input{
+    flex: 1;
+    min-width: 0;
+    height: 100px;
+    font-size: 40px;
+    border-radius: 10px;
+  }
+
+  #formCadastroTarefa button{
+    height: 100px;
+    min-width: 260px;
+    font-size: 40px;
+    border-radius: 10px;
+    gap: 10px;
+  }
+
+  #formCadastroTarefa button img{
+    width: 40px;
+    height: 40px;
+  }
+
+  .tarefa {
+    margin-top: 120px;
+  }
+
+  .tarefa div{
+    gap: 10px;
+    font-size: 40px;
+  }
+
+  #numTarefas,
+  #numConcluidas {
+    font-size: 36px;
+    padding: 6px 10px;
+  }
+
+  #inputBusca{
+    width: 340px;
+    height: 50px;
+    font-size: 38px;
+    border-radius: 8px;
+  }
+
+  hr{
+    margin-top: 28px;
+  }
+
+  #semTarefa{
+    margin-top: 200px;
+    font-size: 40px;
+    gap: 20px;
+  }
+  #semTarefa img {
+    height: 200px;
+  }
+}
+
